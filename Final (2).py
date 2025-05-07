@@ -8,11 +8,11 @@ import google.generativeai as genai
 # Initialize Roboflow Inference client
 CLIENT = InferenceHTTPClient(
     api_url="https://serverless.roboflow.com",
-    api_key="X3PiayjEhkfMyE96iL1w"
+    api_key="ur_api_key"
 )
 
 # Set up Gemini API key
-genai.configure(api_key="AIzaSyD5EVduUfkCnbj_fWs2-Lci18Eq7necSYs")
+genai.configure(api_key="ur_api_key")
 model = genai.GenerativeModel("gemini-1.5-flash")  # ✅ Confirmed working model
 
 # Use the correct available model
